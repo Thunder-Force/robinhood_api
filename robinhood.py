@@ -34,6 +34,6 @@ class Robinhood():
     def stock_check(self, ticker_list):
         for ticker in ticker_list:
             r = rh.stocks.get_latest_price(ticker)
-            print(f'{ticker.upper()}:  ${r[0]}')
+            #print(f'{ticker.upper()}:  ${r[0]}')
 
         
