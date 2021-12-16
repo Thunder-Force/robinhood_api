@@ -18,7 +18,7 @@ class Robinhood():
         logout = rh.authentication.logout()
         print('Logged out.')
 
-    def market_check(self):
+    def is_market_open(self):
         market = False
         current_time = dt.datetime.now().time()
         market_open_time = dt.time(7,30,0)
@@ -31,9 +31,9 @@ class Robinhood():
             print('Market is closed.')
         return True#market
 
-    def stock_check(self, ticker_list):
+    def get_price(self, ticker_list):
         for ticker in ticker_list:
             r = rh.stocks.get_latest_price(ticker)
-            #print(f'{ticker.upper()}:  ${r[0]}')
+            print(f'{ticker.upper()}:  ${r[0]}')
 
         
