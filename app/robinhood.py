@@ -12,7 +12,7 @@ class Robinhood():
             store_session = True,
             mfa_code = auth_code
         )
-        print('Logged in.')
+        print('Logged in.') 
 
     def logout(self):
         logout = rh.authentication.logout()

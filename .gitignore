@@ -1,3 +1,4 @@
-.getignore
+.venv
+__pycache__
 app/config.py
 app/notes.txt
